@@ -1,0 +1,284 @@
+*{
+			padding: 0;
+			margin: 0;
+			
+		}
+		.bkgrnd{
+			background:url(../images/back8.gif) no-repeat ;
+			height: 690px;
+			width: 100%;
+			background-size: cover;
+			background-position: center ;
+			background-attachment: fixed;
+			position: relative;
+
+
+		}
+		.bkgrnd2{
+			overflow-y: hidden;
+			background:url(../images/back11.jpg) no-repeat ;
+			
+			width: 100%;
+			background-size: cover;
+			background-position: center ;
+			background-attachment: fixed;
+			z-index: -1;
+		}
+		.blank{
+		height: 250px;
+		width: 100%;
+		background-color: #F84C4C;
+		margin-top: -20px;	
+		
+		
+		}
+        .upper-back{
+        	background-color: #fff;
+        	height: 50px;
+        }
+		::-webkit-scrollbar{
+          width: 0px;
+		}
+		.center-slider{
+           width:65%;
+           height:520px;
+           margin-top: -50px;
+           border: 5px solid #fff;
+           border-radius:5px;
+           position: relative;
+           top:20px;
+           z-index: 3;
+
+		}
+		.back1{
+			width:100%;
+			height: 100%;
+			background:url(../images/akhil13.jpg);
+			background-position: 71% 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.pics{
+			margin-top:0px;
+			z-index: 2;
+			position: relative;
+			top:0px;
+		}
+		.float{
+			width: 24%;
+			float: left;
+			z-index: 3;
+			margin-left: 6.0%;
+            border: 5px solid #fff;
+            border-radius: 10px;
+            position: relative;
+
+		}
+		.change-img,.change-img1,.change-img2{
+			width: 100%;
+			
+
+		}
+
+		@keyframes ani{
+           0%{
+           	opacity: 0;
+
+           }
+           25%{
+           	opacity: 0.25;
+           }
+           50%{
+           	opacity: 0.5;
+           }
+           75%{
+           	  opacity: 0.75;
+           }
+           100%{
+           opacity:1;
+           }
+		}
+		@keyframes heart{
+			0%{
+				transform: scale(0.4);
+			}
+		  
+				
+		   100%{
+				transform: scale(0.7);
+			}
+				
+		}
+		.fade{
+			animation: ani 0.5s linear ;
+		}
+		.bkgrnd3{
+			width:100%;
+
+		}
+		.heart-container{
+          margin-top:0;
+			width: 40%;
+			position: relative;
+			top: 120px;
+		}
+		.love-heart{
+			animation: heart 1s both infinite;
+			width: 100%;
+			position: relative;
+			
+		}
+		.days-container{
+			position: relative;
+			top:340px;
+			width:80%;
+			float: none;
+			display: block;
+			margin:0 auto;
+		
+
+		}
+		.days-heading{
+			text-align: center;
+			font-size: 30px;
+			padding: 2px;
+			font-weight: 700;
+			font-family: 'Dancing Script', cursive;
+
+
+
+			width: 100%;
+		}
+		.days-video{
+			margin-top: 50px;
+		}
+		.row-days{
+			width: 100%;
+			overflow-y: hidden;
+			margin-top: 30px;
+
+		}
+		.col-days{
+         float: left;
+         width: 30%;
+         margin-left: 1.6%;
+         
+       
+		}
+		.center-video{
+			float: none;
+			display: block;
+			position: relative;
+			margin: 0 auto;
+		}
+		.video{
+			width: 100%;
+			border:none;		       
+
+
+		}
+		source{
+			border:none;
+		}
+		#myVideo1{
+			transform:rotate(-5.3deg);
+		}
+
+		#myVideo2{
+			transform:rotate(0deg);
+		}
+		#myVideo3{
+			transform:rotate(5deg);
+		}
+		#myVideo4{
+			transform:rotate(-5deg);
+		}
+		#myVideo5{
+			transform:rotate(0deg);
+		}
+		#myVideo6{
+			transform:rotate(5deg);
+		}
+		.overlay{
+			position: absolute;
+			top:0px;
+			left: 0px;
+			right: 0px;
+			color: white;
+			font-weight: bold;
+			width: 100%;
+			font-family: 'Dancing Script', cursive;
+			height:0px;
+			background-color: rgba(248,76,76,0.7);
+			text-align: center;
+			overflow: hidden;
+			padding-top:0px;
+			font-size: 30px;
+		}
+		.float:hover>.overlay{
+          bottom: 0px;
+          transition: 0.9s;
+          height: auto;
+          
+          padding-top:60%;
+          
+		}
+		@media screen and (max-width: 800px)
+		{
+			.days-container{
+				top: 110px;
+			}
+		}
+		
+		@media screen and (max-width: 700px)
+		{
+			.blank{
+				height:120px;
+				position: relative;
+				top: 20px;
+			}
+			.center-slider{
+				height:300px;
+				width: 90%;
+			}
+			.bkgrnd{
+				height:400px;
+			}
+			.love-heart{
+				top: -50px;
+			}
+           .days-container{
+				top: 150px;
+			}
+
+
+		}
+		@media screen and (max-width: 600px)
+		{
+			.float,.col-days{
+				float: none;
+				display: block;
+				position: relative;
+             width: 70%;
+             margin: 10px auto;
+			}
+              .heart-container{
+        
+			width: 60%;
+			position: relative;
+			top:50px;
+			z-index: 3;
+		}
+		.love-heart{
+				top: 5px;
+			}
+          .days-container{
+				top: 230px;
+			}
+		}
+		@media screen and (max-width: 400px)
+		{
+			 .days-container{
+				top: 180px;
+			}
+		}
